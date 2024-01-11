@@ -62,17 +62,17 @@
 
 // ! Task 6
 // ! Task 7
-// let arrayPush = [];
-// let result;
-// function remove_array_element(arr, n) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] !== n) {
-//       arrayPush.push(arr[i]);
-//     }
-//   }
-//   return arrayPush;
-// }
-// console.log(remove_array_element([25, 14, 56, 15, 36], 25));
+let arrayPush = [];
+let result;
+function remove_array_element(arr, n) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== n) {
+      arrayPush.push(arr[i]);
+    }
+  }
+  return arrayPush;
+}
+console.log(remove_array_element([25, 14, 56, 15, 36], 25));
 
 // ! Task 8
 // function last(arr, n) {
@@ -82,16 +82,16 @@
 // console.log(last([7, 9, 0, -2],1));
 
 // ! Task 9
-let str = "";
-let result;
-function swappingArr(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === arr[i].toUpperCase()) {
-      result = str += arr[i].toLowerCase();
-    } else if (arr[i] === arr[i].toLowerCase()) {
-      result = str += arr[i].toUpperCase();
-    }
-  }
-  return result;
-}
-console.log(swappingArr("Phyton"));
+// let str = "";
+// let result;
+// function swappingArr(arr) {
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i].toUpperCase()) {
+//       result = str += arr[i].toLowerCase();
+//     } else if (arr[i] === arr[i].toLowerCase()) {
+//       result = str += arr[i].toUpperCase();
+//     }
+//   }
+//   return result;
+// }
+// console.log(swappingArr("Phyton"));
