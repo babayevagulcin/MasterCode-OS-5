@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: var(--light); */
+  font-family: "Josefin Sans";
+  list-style: none;
+}
+:root {
+  --bg-dark: #000;
+  --light: #fff;
+  --bg-gradient: linear-gradient(135deg, #3710bd 0%, #a42395 100%);
+  --light-grey: #767992;
+  --light-text: #c8cbe7;
+  --dark-grey: #25273d;
+  --dark-line: #393a4b;
+}
+body {
+  background-color: var(--bg-dark);
+}
+.todo .todo__bg-gradient {
+  height: 50vh;
+  background: var(--bg-gradient);
+}
+.todo .todo__bg-gradient .todo__bg-img {
+  background-image: url("/assets/img/Bitmap.png");
+  background-size: cover;
+  height: 50vh;
+  opacity: 0.8;
+}
+
+.todo .todo__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo .todo__content--width {
+  width: 38%;
+}
+.todo .todo__content .todo__header {
+  display: flex;
+  justify-content: space-between;
+}
+.todo .todo__content .todo__header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  padding-bottom: 48px;
+  color: var(--light);
+}
+.todo .todo__content .todo__header span {
+  font-size: 26px;
+  color: var(--light);
+
+}
+.todo .todo__content .todo__body {
+}
+.todo .todo__content .todo__body .todo__list .todoLabel {
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--dark-grey);
+  padding: 20px;
+}
+.todo .todo__content .todo__body .todo__list .labelText {
+  margin-bottom: 24px;
+}
+.todo .todo__content .todo__body .todo__list .todoInput {
+  border: none;
+  outline: none;
+}
+.todo .todo__content .todo__body .todo__list .todo__list-item  input[type="radio"] {
+  /* color: var(--dark-line); */
+  /* background-color:transparent; */
+  font-size: 32px;
+}
+.todo .todo__content .todo__body .todo__list .todoInput::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  color: var(--light-grey);
+  background-color: var(--dark-grey);
+}
+.todo .todo__content .todo__body .todo__list .todo__list-item {
+  width: 100%;
+}
+.todo .todo__content .todo__body .todo__list .todo__list-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid var(--dark-line);
+}
