@@ -22,59 +22,79 @@
         <div class="todo__bg-gradient">
           <div class="todo__bg-img"></div>
         </div>
-
         <div class="todo__content">
-          <div class="todo__content--width">
-            <div class="todo__header">
-              <h1>Todo</h1>
-              <span class="master icon-light-up"></span>
-              <!-- <span class="master icon-night"></span> -->
-            </div>
-            <div class="todo__body">
-              <form action="">
-                <ul class="todo__list">
-                  <li>
-                    <label for="" class="todoLabel labelText">
-                      <input type="radio" name="radio" id="inputRadio" />
-                      <input
-                        type="text"
-                        class="todoInput"
-                        placeholder="Create a new todo…"
-                      />
-                    </label>
-                  </li>
-                  <li class="todo__list-item">
-                    <label for="inputRadio" class="todoLabel">
-                      <input type="radio" name="radio" id="inputRadio" />
-                      Jog around the park 3x
-                    </label>
-                  </li>
-
-                  <li class="todo__list-item">
-                    <label for="inputRadio" class="todoLabel">
-                      <input type="radio" name="radio" id="inputRadio" />
-                      Jog around the park 3x
-                    </label>
-                  </li>
-                  <li class="todo__list-item">
-                    <label for="inputRadio" class="todoLabel">
-                      <input type="radio" name="radio" id="inputRadio" />
-                      Jog around the park 3x
-                    </label>
-                  </li>
-                  <li class="todo__list-item">
-                    <label for="inputRadio" class="todoLabel">
-                      <input type="radio" name="radio" id="inputRadio" />
-                      Jog around the park 3x
-                    </label>
-                  </li>
-                </ul>
-              </form>
-            </div>
+          <!-- <div class="todo__content--width"> -->
+          <div class="todo__header">
+            <h1>Todo</h1>
+            <span class="master icon-light-up"></span>
+            <!-- <span class="master icon-night"></span> -->
           </div>
+          <div class="todo__body">
+            <form action="">
+              <ul class="todo__list">
+                <li class="todo__list-item--header">
+                  <label for="" class="todoLabel labelText">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    <input
+                      type="text"
+                      class="todoInput"
+                      placeholder="Create a new todo…"
+                    />
+                  </label>
+                </li>
+                <li class="todo__list-item">
+                  <label for="" class="todoLabel">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    Jog around the park 3x
+                  </label>
+                </li>
+                <li class="todo__list-item">
+                  <label for="" class="todoLabel">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    Jog around the park 3x
+                  </label>
+                </li>
+                <li class="todo__list-item">
+                  <label for="" class="todoLabel">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    Jog around the park 3x
+                  </label>
+                </li>
+                <li class="todo__list-item">
+                  <label for="" class="todoLabel">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    Jog around the park 3x
+                  </label>
+                </li>
+                <li class="todo__list-item">
+                  <label for="" class="todoLabel">
+                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
+                    Jog around the park 3x
+                  </label>
+                </li>
+                <li class="todo__list-item--footer">
+                  <div class="todo__footer-items">
+                    <p><span>5</span> items left</p>
+                  </div>
+                  <div class="todo__footer-items">
+                    <p class="active">All</p>
+                    <p>Active</p>
+                    <p>Complated</p>
+                  </div>
+                  <div class="todo__footer-items">
+                    <p>Clear Completed</p>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </section>
+    <footer>
+      <p class="footer__text">Drag and drop to reorder list</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
