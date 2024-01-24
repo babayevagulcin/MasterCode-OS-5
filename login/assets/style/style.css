@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(114, 112, 112);
+    opacity: 1;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(177, 182, 220) 10%, rgba(185, 144, 244, 1) 80%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    width: 23%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.login .content h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.login .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .content form label {
+    border: 1px solid rgb(175, 173, 173);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login .content form label:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px 10px 20px;
+}
+
+.login .content form label:nth-child(2) .icon i:nth-child(1) {
+    position: relative;
+    left: 4%;
+    cursor: pointer;
+    display: block;
+    color: rgb(175, 173, 173);
+}
+
+.login .content form label:nth-child(2) .icon i:last-child {
+    display: none;
+    color: rgb(175, 173, 173);
+    cursor: pointer;
+}
+
+.login .content form label i {
+    color: blueviolet;
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+}
+
+.login__forgot-password {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__forgot-password label {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(175, 173, 173);
+}
+
+.login__forgot-password a {
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.btn {
+    padding-top: 15px;
+}
+
+.btn button {
+    width: 100%;
+    background-color: rgb(61, 61, 242);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login__text {
+    padding: 14px 0;
+}
+
+.login__text p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(114, 112, 112);
+}
+
+.login__text p a {
+    color: rgb(61, 61, 242);
+    font-weight: 700;
+}
+
+.login__connect {
+    position: relative;
+    border-bottom: 1px solid rgb(177, 182, 220);
+    height: 1rem;
+}
+
+.login__connect span {
+    position: absolute;
+    left: 31%;
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login__contact {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login__contact img {
+    width: 40px;
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 80%;
+    }
+}
