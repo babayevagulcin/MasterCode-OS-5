@@ -1,0 +1,12 @@
+label {
+  font-size: 24px;
+  display: block;
+  margin-top: 5px;
+}
+input {
+  padding: 7px;
+  width: 20%;
+}
+button {
+  font-size: 18px;
+}
