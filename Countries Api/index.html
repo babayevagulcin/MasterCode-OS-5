@@ -16,225 +16,216 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Countries Api</title>
   </head>
-  <body>
-    <header class="countries">
+  <body class="dark-theme">
+    <header class="countries-header">
       <div class="container">
         <!--? NAVBAR -->
         <nav class="countries__navbar">
           <h1 class="countries__title">Where in the world?</h1>
+
           <div class="countries__navbar-buttons">
+            <span class="countries__icon">
+              <i class="fa-regular fa-sun"></i>
+            </span>
+            <button class="countries__button">Light mode</button>
+          </div>
+          <div class="countries__navbar-buttons--none">
             <span class="countries__icon">
               <i class="fa-regular fa-moon"></i>
             </span>
-            <button class="countries__button--dark">Dark mode</button>
+            <button class="countries__button">Dark mode</button>
           </div>
         </nav>
       </div>
+    </header>
 
-      <!--? COUNTRIES BODY -->
-      <div class="countries__body">
-        <div class="container">
-          <div class="countries__search-filtered">
-            <div class="countries__search">
-              <label class="countries__search-label">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input
-                  type="text"
-                  id="search"
-                  class="countries__search-input"
-                  placeholder="Search for a country"
-                />
-              </label>
-            </div>
-            <div class="countries__filtered">
-              <select class="countries__filtered-select">
-                <option value="region" class="countries__name" hidden>
-                  Filter by Region
-                </option>
-                <span class="countries__filtered-icon"
-                  ><i class="fa-solid fa-angle-down"></i
-                ></span>
-                <option value="africa" class="countries__name">Africa</option>
-                <option value="america" class="countries__name">America</option>
-                <option value="asia" class="countries__name">Asia</option>
-                <option value="europe" class="countries__name">Europe</option>
-                <option value="oceania" class="countries__name">Oceania</option>
-              </select>
-            </div>
+    <!--? COUNTRIES BODY -->
+    <section class="countries__body">
+      <div class="container">
+        <div class="countries__search-filtered">
+          <div class="countries__search">
+            <label class="countries__search-label">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                id="search"
+                class="countries__search-input"
+                placeholder="Search for a country"
+              />
+            </label>
           </div>
-          <div class="countries__cards">
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/gb.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/gb.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="countries__card--width">
-              <div class="countries__card">
-                <div class="countries__card-img">
-                  <a href=""
-                    ><img src="https://flagcdn.com/de.svg" alt="country"
-                  /></a>
-                </div>
-                <div class="countries__card-content">
-                  <h4 class="countries__card-title">Germany</h4>
-                  <p class="countries__card-population">
-                    Population: <span class="population-value">81,770,900</span>
-                  </p>
-                  <p class="countries__card-region">
-                    Region: <span class="region-value">Europe </span>
-                  </p>
-                  <p class="countries__card-capital">
-                    Capital: <span class="capital-value">Berlin</span>
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="countries__filtered">
+            <select class="countries__filtered-select">
+              <option value="region" class="countries__name" hidden>
+                Filter by Region
+              </option>
+              <span class="countries__filtered-icon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+              <option value="africa" class="countries__name">Africa</option>
+              <option value="america" class="countries__name">America</option>
+              <option value="asia" class="countries__name">Asia</option>
+              <option value="europe" class="countries__name">Europe</option>
+              <option value="oceania" class="countries__name">Oceania</option>
+            </select>
           </div>
         </div>
+        <div class="countries__cards">
+          <!-- <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div>
+          <div class="countries__card">
+            <div class="countries__card-img">
+              <a href=""
+                ><img src="https://flagcdn.com/de.svg" alt="country"
+              /></a>
+            </div>
+            <div class="countries__card-content">
+              <h4 class="countries__card-title">Germany</h4>
+              <p class="countries__card-population">
+                Population: <span class="population-value">81,770,900</span>
+              </p>
+              <p class="countries__card-region">
+                Region: <span class="region-value">Europe </span>
+              </p>
+              <p class="countries__card-capital">
+                Capital: <span class="capital-value">Berlin</span>
+              </p>
+            </div>
+          </div> -->
+        </div>
       </div>
-    </header>
+    </section>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
