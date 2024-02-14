@@ -17,92 +17,59 @@
     <title>ToDo</title>
   </head>
   <body>
-    <section class="todo">
-      <div class="container">
-        <div class="todo__bg-gradient">
-          <div class="todo__bg-img"></div>
-        </div>
-        <div class="todo__content">
-          <div class="todo__header">
-            <h1>Todo</h1>
-            <span class="master icon-light-up"></span>
-            <!-- <span class="master icon-night"></span> -->
-          </div>
-          <div class="todo__body">
-            <form action="">
-              <ul class="todo__list">
-                <li class="todo__list-item">
-                  <label for="" class="todoLabel labelText">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    <input
-                      type="text"
-                      class="todoInput"
-                      placeholder="Create a new todo…"
-                    />
-                  </label>
-                </li>
-                
-                <li class="todo__list-item">
-                  <label for="" class="todoLabel">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    Jog around the park 3x
-                  </label>
-                  </li>
-                <!-- <li class="todo__list-item">
-                  <label for="" class="todoLabel">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    Jog around the park 3x
-                  </label>
-                </li>
-                <li class="todo__list-item">
-                  <label for="" class="todoLabel">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    Jog around the park 3x
-                  </label>
-                </li>
-                <li class="todo__list-item">
-                  <label for="" class="todoLabel">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    Jog around the park 3x
-                  </label>
-                </li>
-                <li class="todo__list-item">
-                  <label for="" class="todoLabel">
-                    <input type="checkbox" name="checkbox" id="inputCheckbox" />
-                    Jog around the park 3x
-                  </label>
-                </li>
-                </li> -->
+    <div class="container">
+      <header class="todo__header">
+        <h1>Todo</h1>
+        <span class="master icon-light-up"></span>
+        <!-- <span class="master icon-night"></span> -->
+      </header>
+      <section class="todo__input">
+        <form action="" class="todo__form">
+          <label for="" class="todoLabel">
+            <div class="todo__inpu-checkbox"></div>
+            <input
+              type="text"
+              class="todoInput"
+              placeholder="Create a new todo…"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="todo__body">
+        <ul class="todo__list">
+          <!-- <li class="todo__list-item">
+            <div class="todo__checkbox">
+               <img src="./assets/img/Group 3.png" alt="">
+            </div>
+            <p class="todo__text">Jog around the park 3x</p>
+          </li> -->
+          <li class="todo__list-item todo__list-item--footer">
+            <div class="todo__footer-items">
+              <p><span>5</span> items left</p>
+            </div>
+            <div class="todo__footer-items">
+              <p class="active">All</p>
+              <p>Active</p>
+              <p>Complated</p>
+            </div>
+            <div class="todo__footer-items">
+              <p>Clear Completed</p>
+            </div>
+          </li>
+          <li class="todo__list-item todo__list-item--footer d-flex">
+            <div class="todo__footer-items">
+              <p class="active">All</p>
+              <p>Active</p>
+              <p>Complated</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer class="todoFooter">
+        <p class="footer__text">Drag and drop to reorder list</p>
+      </footer>
+    </div>
 
-                <li class="todo__list-item--footer">
-                  <div class="todo__footer-items">
-                    <p><span>5</span> items left</p>
-                  </div>
-                  <div class="todo__footer-items">
-                    <p class="active">All</p>
-                    <p>Active</p>
-                    <p>Complated</p>
-                  </div>
-                  <div class="todo__footer-items">
-                    <p>Clear Completed</p>
-                  </div>
-                </li>
-                <li class="todo__list-item--footer d-flex">
-                  <div class="todo__footer-items">
-                    <p class="active">All</p>
-                    <p>Active</p>
-                    <p>Complated</p>
-                  </div>
-                </li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="todoFooter">
-      <p class="footer__text">Drag and drop to reorder list</p>
-    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

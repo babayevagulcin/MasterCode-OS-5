@@ -1,42 +1,30 @@
-let form = document.querySelector("form");
-let todoList = document.querySelector(".todo__list");
-let todoLabel = document.querySelector(".todoLabel");
+let todoForm = document.querySelector(".todo__form");
 let todoInput = document.querySelector(".todoInput");
+let todoCheckbox = document.querySelector(".todo__checkbox");
+let todoList = document.querySelector(".todo__list");
+let todoListItem = document.querySelector(".todo__list-item");
 let todoListItemFooter = document.querySelector(".todo__list-item--footer");
-// todoInput.addEventListener("input", function (e) {
-//   e.preventDefault();
-//   if (todoInput) {
-//     let todoListItem = document.createElement("li");
-//     let todoLabelCheck = document.createElement("label");
-//     let inputCheckbox = document.createElement("input");
-//     inputCheckbox.setAttribute("type", "checkbox");
 
-//     todoListItem.classList.add(".todo__list-item");
-//     todoListItem.classList.add("todoLabel");
-//     inputCheckbox.id = "inputCheckbox";
-
-//     todoList.append(todoListItem);
-//     todoListItem.append(todoLabelCheck);
-//     todoLabelCheck.append(inputCheckbox);
-//     todoListItem.innerHTML += todoInput.value;
-
-//     console.log(todoListItem);
-//   }
-// });
-todoInput.addEventListener("input", function (e) {
+todoForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (todoInput) {
-    let todoListItem = document.createElement("li");
-    todoListItem.innerHTML += `
-    <li class="todo__list-item">
-    <label for="" class="todoLabel">
-      <input type="checkbox" name="checkbox" id="inputCheckbox" />
-      ${todoInput.value}
-    </label>
-    </li>
-    `;
-    todoListItem.classList.add(".todo__list-item");
-    todoList.append(todoListItem);
-    console.log(todoListItem);
+  if (todoInput.value) {
+    let createItem = createTodo();
+    todoList.insertAdjacentHTML("afterbegin", createItem);
   }
 });
+function createTodo() {
+  return `
+      <li class="todo__list-item">
+       <div class="todo__checkbox" onclick="createCheck(this)" ></div>
+       <p class="todo__text">${todoInput.value}</p>
+     </li>
+  `;
+}
+// function createCheck() {
+//   let todoCheckbox = document.querySelector(".todo__checkbox");
+//   if (){
+//     let checkImg = document.createElement("img");
+//     checkImg.setAttribute("src", "./assets/img/Group 3.png");
+//     todoCheckbox.appendChild(checkImg);
+//   }
+// }
